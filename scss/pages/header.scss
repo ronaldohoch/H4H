@@ -1,0 +1,48 @@
+.menu{
+	margin-top:32px;
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	li{
+		display:inline-block;
+		padding:7px 11px;
+		position:relative;
+		&:before,&:after{
+			@extend .animated;
+			content:"";
+			display:block;
+			position:absolute;
+			left: -6px;
+			top: 13px;
+		}
+		&:before{
+			@include sprt (-13px,0,11px,10px);
+			@include transform(scale(1));
+		}
+		&:after{
+			@include sprt (0px,0,11px,10px);
+			@include transform(scale(0));
+		}
+		&:hover,&.active{
+			&:before{
+				@include transform(scale(0));
+			}
+			&:after{
+				@include transform(scale(1));
+			}
+		}
+
+	}
+	a{
+		text-transform:uppercase;
+		color:$font-color;
+	}
+}
+
+.main-event{
+	background-image: url(../img/main-event-background.jpg);
+	background-repeat: no-repeat;
+	height: 231px;
+}

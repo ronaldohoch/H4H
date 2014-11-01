@@ -1,0 +1,301 @@
+/*.box {
+ *	@include transition(all, 0.2s, $timingFunction,0);
+ *}
+ */
+/*
+ * @include Opacity(0.5); @include Opacity(1);
+ */
+/*
+ * @include bx(0, 0, 0, 2,rgb(111, 178, 0))
+ */
+/*
+ * @include bxInset(0, 0, 0, 2,rgb(111, 178, 0) )
+ */
+/*
+ * @include  scale(1);
+ */
+/*
+ * @include  transform(translate(10px,10px))
+ */
+/*
+ * @include  origin(0% 0%)
+ */
+/*
+	@include keyframes(bgcolor) {
+	  0% {
+	    background-color: #ffccf2;
+	  }
+	  100% {
+	    background-color: #ccffff;
+	  } 
+	}
+ */
+/*
+ * @include animation (bgcolor, 300ms, 0, $timingFunction)
+ */
+/*
+ * @include animation (bgcolor, 300ms, 0, $timingFunction)
+ */
+/*
+ * @include animationRepeat (bgcolor, 300ms, 0, $timingFunction)
+ */
+/*
+ * @include sprt (-13px, 0,11px,10px);
+ */
+.hoverOpacity {
+  opacity: 0.85;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+}
+
+/* http://fontawesome.io/assets/font-awesome/fonts/ */
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+.animated, .menu li:before, .menu li:after {
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0.2, 0, 1) 0ms;
+  -moz-transition: all 0.3s cubic-bezier(0.4, 0.2, 0, 1) 0ms;
+  -ms-transition: all 0.3s cubic-bezier(0.4, 0.2, 0, 1) 0ms;
+  -o-transition: all 0.3s cubic-bezier(0.4, 0.2, 0, 1) 0ms;
+  transition: all 0.3s cubic-bezier(0.4, 0.2, 0, 1) 0ms;
+}
+
+.without-left {
+  padding-left: 0;
+}
+
+.without-right {
+  padding-right: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.radius {
+  border-radius: 3px;
+}
+
+.no-border {
+  border: 0px;
+}
+
+.header {
+  background-color: #f0f0f0;
+}
+
+.footer {
+  background-color: #424242;
+}
+
+.header, .footer {
+  float: left;
+  padding: 32px 0;
+  width: 100%;
+}
+
+.header, .footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@-webkit-keyframes translateO {
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+@-moz-keyframes translateO {
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+@-ms-keyframes translateO {
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes translateO {
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.header input {
+  -webkit-box-shadow: 0px 0px 3px -1px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow: 0px 0px 3px -1px rgba(50, 50, 50, 0.25);
+  box-shadow: 0px 0px 3px -1px rgba(50, 50, 50, 0.25);
+}
+.header input.email {
+  width: 192px;
+}
+.header input.password {
+  width: 160px;
+}
+
+.footer input.email {
+  width: 296px;
+}
+.footer input.password {
+  width: 264px;
+}
+
+.login-form input {
+  height: 32px;
+  margin-right: 8px;
+  display: block;
+  float: left;
+  padding-left: 12px;
+}
+.login-form input.password {
+  margin-right: 0;
+  border-right: 0;
+}
+.login-form .send-login {
+  background-color: #ed1c24;
+  margin-right: 8px;
+}
+.login-form .send-login:before {
+  content: "";
+  background-image: url("../img/sprite.png");
+  background-position-x: -38px;
+  background-position-y: 0px;
+  width: 11px;
+  height: 18px;
+  display: block;
+  position: relative;
+  left: 4px;
+}
+.login-form .send-facebook {
+  background-color: #194992;
+  margin-right: 11px;
+}
+.login-form .send-facebook:before {
+  content: "";
+  background-image: url("../img/sprite.png");
+  background-position-x: 0px;
+  background-position-y: -11px;
+  width: 12px;
+  height: 22px;
+  display: block;
+  position: relative;
+  left: 12px;
+  top: 6px;
+}
+.login-form .secondary-action-wrap {
+  width: 160px;
+  float: left;
+}
+.login-form .secondary-actions {
+  font-size: 14px;
+  color: #58585a;
+  width: 100%;
+  display: block;
+  line-height: 16px;
+}
+
+.squared-button {
+  display: block;
+  border: 0px;
+  float: left;
+}
+.squared-button.tiny {
+  width: 32px;
+  height: 32px;
+}
+
+.menu {
+  margin-top: 32px;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu li {
+  display: inline-block;
+  padding: 7px 11px;
+  position: relative;
+}
+.menu li:before, .menu li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -6px;
+  top: 13px;
+}
+.menu li:before {
+  background-image: url("../img/sprite.png");
+  background-position-x: -13px;
+  background-position-y: 0;
+  width: 11px;
+  height: 10px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.menu li:after {
+  background-image: url("../img/sprite.png");
+  background-position-x: 0px;
+  background-position-y: 0;
+  width: 11px;
+  height: 10px;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.menu li:hover:before, .menu li.active:before {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.menu li:hover:after, .menu li.active:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.menu a {
+  text-transform: uppercase;
+  color: #58585a;
+}
+
+.main-event {
+  background-image: url(../img/main-event-background.jpg);
+  background-repeat: no-repeat;
+  height: 231px;
+}

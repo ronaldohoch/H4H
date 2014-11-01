@@ -1,0 +1,5 @@
+@include keyframes(translateO){
+	100%{
+		@include  transform(translate(0px, 0px));
+	}
+}
