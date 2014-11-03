@@ -1,0 +1,25 @@
+.advertisement {
+  margin-bottom: 30px;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+.event-list li {
+  width: 305px;
+  height: 192px;
+  position: relative;
+  float: left;
+  background: #f8f8f8;
+  margin: 7px;
+}
+.event-list li .follow-event {
+  position: absolute;
+  height: 48px;
+  width: 100%;
+  display: block;
+  bottom: 0px;
+  left: 0px;
+}
