@@ -2446,9 +2446,21 @@ fieldset {
   width: 100%;
   display: block;
   font-size: 13px;
+  position: absolute;
 }
 .event-list li .data {
-  text-align: center;
+  top: 40px;
+  width: 76%;
+  right: 0;
+  text-align: left;
+}
+.event-list li .local {
+  bottom: 90px;
+  left: 45px;
+}
+.event-list li .buyin {
+  bottom: 70px;
+  left: 45px;
 }
 .event-list li .follow-event {
   position: absolute;
@@ -2467,4 +2479,13 @@ fieldset {
 }
 .event-list li .follow-event.warn:before {
   left: 100px;
+}
+.event-list li .title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  text-align: left;
+  width: 76%;
 }

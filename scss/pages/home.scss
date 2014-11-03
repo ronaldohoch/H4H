@@ -41,10 +41,16 @@
 			width: 100%;
 			display: block;
 			font-size: 13px;
+			position:absolute;
 		}
-		.data{text-align: center;}
-		.local{}
-		.buyin{}
+		.data{
+			top: 40px;
+			width: 76%;
+			right: 0;
+			text-align: left;
+		}
+		.local{bottom:90px;left:45px;}
+		.buyin{bottom:70px;left:45px;}
 		.follow-event{
 			position: absolute;
 			height:48px;
@@ -64,6 +70,15 @@
 					left:100px;
 				}
 			}
+		}
+		.title{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			font-size: 20px;
+			margin: 10px 0 0 0;
+			text-align: left;
+			width: 76%;
 		}
 	}
 }
