@@ -57,4 +57,9 @@ a,a:hover,a:active{text-decoration:none;}
 	@include bxInset(0px, -2px, 1px, 0px,rgba(0, 0, 0,0.10) );
 	margin-bottom:30px;
 }
-.footer{background-color:$footer-background;}
+.footer{
+	background-color:$footer-background;
+	height:350px;
+	margin-top:10px;
+	color:#fff;
+}

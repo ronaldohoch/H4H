@@ -2046,7 +2046,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
 }
-.font-awesome:before, .main-event .infos:before, .follow-event:before {
+.font-awesome:before, .main-event .infos:before, .follow-event:before, .event-list li .infos:before, .see-more:before {
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -2123,6 +2123,9 @@ a, a:hover, a:active {
 
 .footer {
   background-color: #424242;
+  height: 350px;
+  margin-top: 10px;
+  color: #fff;
 }
 
 @-webkit-keyframes translateO {
@@ -2388,6 +2391,11 @@ fieldset {
   line-height: 30px;
 }
 
+.all-rights {
+  text-align: center;
+  font-size: 12px;
+}
+
 .advertisement {
   margin-bottom: 30px;
 }
@@ -2395,7 +2403,7 @@ fieldset {
 .event-list {
   list-style: none;
   padding: 0px;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 .event-list li {
   width: 305px;
@@ -2448,6 +2456,9 @@ fieldset {
   font-size: 13px;
   position: absolute;
 }
+.event-list li .infos:before {
+  font-size: 16px;
+}
 .event-list li .data {
   top: 40px;
   width: 76%;
@@ -2456,11 +2467,11 @@ fieldset {
 }
 .event-list li .local {
   bottom: 90px;
-  left: 45px;
+  left: 35px;
 }
 .event-list li .buyin {
   bottom: 70px;
-  left: 45px;
+  left: 35px;
 }
 .event-list li .follow-event {
   position: absolute;
@@ -2477,6 +2488,10 @@ fieldset {
   left: 80px;
   top: 15px;
 }
+.event-list li .follow-event.warn {
+  background-color: #f2f2f2;
+  color: #424242;
+}
 .event-list li .follow-event.warn:before {
   left: 100px;
 }
@@ -2488,4 +2503,22 @@ fieldset {
   margin: 10px 0 0 0;
   text-align: left;
   width: 76%;
+}
+
+.see-more {
+  width: 121px;
+  height: 33px;
+  text-align: center;
+  line-height: 33px;
+  margin: 0 auto;
+  display: block;
+  background: #f2f2f2;
+  color: #000;
+  position: relative;
+}
+.see-more:before {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  font-size: 15px;
 }

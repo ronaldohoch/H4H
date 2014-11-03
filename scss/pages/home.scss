@@ -5,7 +5,7 @@
 .event-list{
 	list-style:none;
 	padding:0px;
-	margin:0;
+	margin:0 0 10px 0;
 	li{
 		width: 305px;
 		height: 192px;
@@ -42,6 +42,10 @@
 			display: block;
 			font-size: 13px;
 			position:absolute;
+			@extend .font-awesome;
+			&:before{
+				font-size:16px;
+			}
 		}
 		.data{
 			top: 40px;
@@ -49,8 +53,8 @@
 			right: 0;
 			text-align: left;
 		}
-		.local{bottom:90px;left:45px;}
-		.buyin{bottom:70px;left:45px;}
+		.local{bottom:90px;left:35px;}
+		.buyin{bottom:70px;left:35px;}
 		.follow-event{
 			position: absolute;
 			height:48px;
@@ -66,6 +70,8 @@
 				top: 15px;
 			}
 			&.warn{
+				background-color:#f2f2f2;
+				color:#424242;
 				&:before{
 					left:100px;
 				}
@@ -80,5 +86,23 @@
 			text-align: left;
 			width: 76%;
 		}
+	}
+}
+.see-more{
+	@extend .font-awesome;
+	width: 121px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	margin: 0 auto;
+	display: block;
+	background: #f2f2f2;
+	color:#000;
+	position:relative;
+	&:before{
+		position: absolute;
+		left: 10px;
+		top: 7px;
+		font-size: 15px;
 	}
 }
