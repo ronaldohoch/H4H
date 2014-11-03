@@ -1,0 +1,25 @@
+//Cor de válido e inválido da borda do formulário
+$main-red:#ed1c24;
+$main-blue:#267fba;
+$main-gray:#424242;//font-color
+$second-red:#f83636;
+$header-background:#f0f0f0;
+$footer-background:#424242;
+
+$font-color:#58585a;
+
+$menu-gray:#999999;
+$menu-red:#ff2525;
+
+
+//Padding para o mobile;
+$foundation-padding:0.4375em;
+
+//Timing function para animações do site
+//swift do google: cubic-bezier(0.4,.2,0,1);
+$timingFunction: cubic-bezier(0.4,.2,0,1);
+
+//Opacidade padrão para os botões
+.hoverOpacity{
+	@include Opacity(0.85);
+}

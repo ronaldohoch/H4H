@@ -1,0 +1,108 @@
+.menu{
+	margin-top:32px;
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	li{
+		display:inline-block;
+		padding:7px 11px;
+		position:relative;
+		&:before,&:after{
+			@extend .animated;
+			content:"";
+			display:block;
+			position:absolute;
+			left: -6px;
+			top: 13px;
+		}
+		&:before{
+			@include sprt (-13px,0,11px,10px);
+			@include transform(scale(1));
+		}
+		&:after{
+			@include sprt (0px,0,11px,10px);
+			@include transform(scale(0));
+		}
+		&:hover,&.active{
+			&:before{
+				@include transform(scale(0));
+			}
+			&:after{
+				@include transform(scale(1));
+			}
+		}
+
+	}
+	a{
+		text-transform:uppercase;
+		color:$font-color;
+		font-size:15px;
+	}
+}
+
+.main-event{
+	background-image: url(../img/main-event-background.jpg);
+	background-repeat: no-repeat;
+	background-color:#4e8b05;
+	min-height: 231px;
+	padding:20px;
+	margin-top:20px;
+	position:relative;
+	&.white-color{color:#fff;}
+	&.black-color{color:#000;}
+	.title{
+		display: block;
+		max-width: 50%;
+		font-size: 50px;
+		margin: 0 0 10px 0;
+		line-height: 50px;
+	}
+	.infos{
+		@extend .font-awesome;
+		display: block;
+		padding-left:15px;
+		position:relative;
+		&.place,&.buyin{&:before{left:3px;}}
+		&:before{font-size:14px;position:absolute;left:0;}
+	}
+}
+.follow-event{
+	position:absolute;
+	bottom:30px;
+	right:30px;
+	background-color:rgba(255,255,255,0.20);
+	width:128px;
+	height:32px;
+	text-align:center;
+	line-height:32px;
+	color:#000;
+	font-size:14px;
+	@extend .font-awesome;
+	&:before{
+		position: absolute;
+		left: 5px;
+		top: 6px;
+		font-size: 16px;
+	}
+}
+.some-information{
+	width:30%;
+	position:absolute;
+	top:0px;
+	right:30px;
+	.big-text{
+		font-size: 80px;
+		display: block;
+		line-height: 65px;
+		text-align:right;
+	}
+	.small-text{
+		width: 100%;
+		display: block;
+		text-align: right;
+		font-size: 30px;
+		line-height: 30px;
+	}
+}

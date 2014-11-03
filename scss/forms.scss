@@ -1,0 +1,82 @@
+fieldset{border:0;padding:0;}
+
+.header{
+	input{
+		@include bx(0px, 0px, 3px, -1px, rgba(50, 50, 50, 0.25));
+		&.email{
+			width:192px;
+		}
+		&.password{
+			width:160px;
+		}
+	}
+}
+.footer{
+	input{
+		&.email{
+			width:296px;
+		}
+		&.password{
+			width:264px;
+		}
+	}
+}
+
+
+.login-form{
+	input{
+		height:32px;
+		margin-right:8px;
+		display: block;
+		float:left;
+		padding-left:12px;
+		&.password{
+			margin-right:0;
+			border-right:0;
+		}
+	}
+	.send-login{
+		background-color:$main-red;
+		margin-right:8px;
+		&:before{
+			content:"";
+			@include sprt (-38px,0px,11px,18px);
+			display: block;
+			position: relative;
+			left: 5px;
+		}
+	}
+	.send-facebook{
+		background-color:#194992;
+		margin-right:11px;
+		&:before{
+			content:"";
+			@include sprt (0px, -11px,12px,22px);
+			display: block;
+			position: relative;
+			left: 12px;
+			top: 6px;
+		}
+	}
+	.secondary-action-wrap{
+		width: 160px;
+		float: left;
+	}
+	.secondary-actions{
+		font-size: 14px;
+		color: #58585a;
+		width: 100%;
+		display: block;
+		line-height: 16px;
+	}
+}
+
+.squared-button{
+	display:block;
+	border:0px;
+	float:left;
+	&.tiny{
+		width:32px;
+		height:32px;
+	}
+}
