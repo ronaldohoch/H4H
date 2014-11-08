@@ -5,14 +5,11 @@
 .event-list{
 	list-style:none;
 	padding:0px;
-	margin:0;
-	li{
-		width: 305px;
+	margin:0 0 10px 0;
+	.event-wrapper{
 		height: 192px;
 		position: relative;
-		float: left;
 		background: #f8f8f8;
-		margin:7px;
 		&:before{
 			content:"";
 			position:absolute;
@@ -23,28 +20,47 @@
 			&:before{
 				@include sprt (-108px,-1px,56px,56px);
 			}
-			.follow-event{background-color:$second-red;}	
+			.follow-event{
+				background-color:$second-red;
+				&:hover{background-color:darken($second-red,5%);}
+			}
 		}
 		&.blue{
 			&:before{
 				@include sprt (-165px,-1px,56px,56px);
 			}
-			.follow-event{background-color:$main-blue;}
+			.follow-event{
+				background-color:$main-blue;
+				&:hover{background-color:darken($main-blue,5%);}
+			}
 		}
 		&.gray{
 			&:before{
 				@include sprt (-51px,-1px,56px,56px);
 			}
-			.follow-event{background-color:#f2f2f2;color:#424242;}
+			.follow-event{
+				background-color:#f2f2f2;color:#424242;
+			}
 		}
+		&.advertisement{margin-bottom:0;}
 		.infos{
 			width: 100%;
 			display: block;
 			font-size: 13px;
+			position:absolute;
+			@extend .font-awesome;
+			&:before{
+				font-size:16px;
+			}
 		}
-		.data{text-align: center;}
-		.local{}
-		.buyin{}
+		.data{
+			top: 40px;
+			width: 76%;
+			right: 0;
+			text-align: left;
+		}
+		.local{bottom:90px;left:35px;}
+		.buyin{bottom:70px;left:35px;}
 		.follow-event{
 			position: absolute;
 			height:48px;
@@ -60,10 +76,40 @@
 				top: 15px;
 			}
 			&.warn{
+				background-color:#f2f2f2;
+				color:#424242;
 				&:before{
 					left:100px;
 				}
+				&:hover{background-color:darken(#f2f2f2,5%);}
 			}
 		}
+		.title{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			font-size: 20px;
+			margin: 10px 0 0 0;
+			text-align: left;
+			width: 76%;
+		}
+	}
+}
+.see-more{
+	@extend .font-awesome;
+	width: 121px;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+	margin: 0 auto;
+	display: block;
+	background: #f2f2f2;
+	color:#000;
+	position:relative;
+	&:before{
+		position: absolute;
+		left: 15px;
+		top: 7px;
+		font-size: 13px;
 	}
 }

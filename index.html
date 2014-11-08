@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Hand4Hand</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/foundation.min.css">
@@ -19,6 +20,7 @@
 			<div class="form medium-8 large-8 columns">
 				<form class="login-form">
 					<fieldset>
+						<legend class="hidden">acessar</legend>
 						<input name="email" class="no-border email" placeholder="Email" type="text" />
 						<input name="senha" class="no-border password" placeholder="Senha" type="password" />
 						<button type="submit" class="no-border squared-button tiny no-radius send-login"></button>
@@ -49,7 +51,7 @@
 				<span class="infos buyin fa-usd">Buy-in: R$ 1.000,00</span>
 
 				<p class="some-information"><span class="big-text">500k</span><span class="small-text">garantidos</span></p>
-				<a href="#" class="btn squared-button fa-play-circle follow-event">acompanhar</a>
+				<a href="#" class="btn squared-button fa-play-circle follow-event animated">acompanhar</a>
 			</div>
 
 		</div>
@@ -63,21 +65,117 @@
 
 	<section class="other-events">
 		<div class="row">
-			<ul class="event-list">
-				<li class="red">
-					<p class="title">Satélite Freeroll</p>
-					<span class="infos data">10 a 15 de Dezembro de 2014</span>
-					<span class="infos local">Local: Centro de Porto Alegre</span>
-					<span class="infos buyin">Buy-in: R$1.000,00</span>
-					<a href="#" class="follow-event fa-play-circle">acompanhar</a>
+			<ul class="event-list clearfix small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+				<li>
+					<div class="event-wrapper red">
+						<p class="title">Satélite Freeroll</p>
+						<span class="infos data">10 a 15 de Dezembro de 2014</span>
+						<span class="infos local fa-map-marker">Local: Centro de Porto Alegre</span>
+						<span class="infos buyin fa-usd">Buy-in: R$1.000,00</span>
+						<a href="#" class="follow-event animated fa-play-circle">acompanhar</a>
+					</div>
 				</li>
-				<li class="blue">
-					<a href="#" class="follow-event fa-play-circle">acompanhar</a>
+				<li>
+					<div class="event-wrapper blue">
+						<p class="title">Satélite Freeroll</p>
+						<span class="infos data">10 a 15 de Dezembro de 2014</span>
+						<span class="infos local fa-map-marker">Local: Centro de Porto Alegre</span>
+						<span class="infos buyin fa-usd">Buy-in: R$1.000,00</span>
+						<a href="#" class="follow-event animated fa-play-circle">acompanhar</a>
+					</div>
 				</li>
-				<li class="gray">
-					<a href="#" class="follow-event fa-envelope warn">avisar</a>
+				<li>
+					<div class="event-wrapper advertisement">
+						<img src="http://placehold.it/305x192&text=Publicidade" />
+					</div>
+				</li>
+				
+				<li>
+					<div class="event-wrapper red">
+						<p class="title">Satélite Freeroll</p>
+						<span class="infos data">10 a 15 de Dezembro de 2014</span>
+						<span class="infos local fa-map-marker">Local: Centro de Porto Alegre</span>
+						<span class="infos buyin fa-usd">Buy-in: R$1.000,00</span>
+						<a href="#" class="follow-event animated fa-envelope warn">avisar</a>
+					</div>
+				</li>
+				<li>
+					<div class="event-wrapper blue">
+						<p class="title">Satélite Freeroll</p>
+						<span class="infos data">10 a 15 de Dezembro de 2014</span>
+						<span class="infos local fa-map-marker">Local: Centro de Porto Alegre</span>
+						<span class="infos buyin fa-usd">Buy-in: R$1.000,00</span>
+						<a href="#" class="follow-event animated fa-envelope warn">avisar</a>
+					</div>
+				</li>
+				<li>
+					<div class="event-wrapper gray">
+						<p class="title">Satélite Freeroll</p>
+						<span class="infos data">10 a 15 de Dezembro de 2014</span>
+						<span class="infos local fa-map-marker">Local: Centro de Porto Alegre</span>
+						<span class="infos buyin fa-usd">Buy-in: R$1.000,00</span>
+						<a href="#" class="follow-event animated fa-envelope warn">avisar</a>
+					</div>
 				</li>
 			</ul>
+			<a href="#" class="see-more no-radius no-border fa-plus-square">ver mais</a>
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="row">
+			<!-- <div class="small-12 medium-5 large-5 columns"> -->
+				<div class="form small-12 medium-5 large-5 columns">
+					<ul class="social-media">
+						<li class="facebook">
+							<div class="animated">
+								<a href="#" id="">
+									<i class="icon font-awesome  fa-facebook-square"></i>
+									<span class="title">facebook</span>
+								</a>
+							</div>
+						</li>
+						<li class="youtube">
+							<div class="animated">
+								<a href="#" id="">
+									<i class="icon font-awesome fa-youtube-square"></i>
+									<span class="title">youtube</span>
+								</a>
+							</div>
+						</li>
+						<li class="twitter">
+							<div class="animated">
+								<a href="#" id="">
+									<i class="icon font-awesome fa-twitter-square"></i>
+									<span class="title">twitter</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<form class="login-form">
+						<legend>Acessar</legend>
+						<fieldset>
+							<input name="email" class="no-border email" placeholder="Email" type="text" />
+							<input name="senha" class="no-border password" placeholder="Senha" type="password" />
+							<button type="submit" class="no-border squared-button tiny no-radius send-login"></button>
+							<div class="secondary-action-wrap">
+								<a href="#" class="secondary-actions forgot-password">Esqueci minha senha</a>
+								<a href="#" class="secondary-actions new-register">Não possuo cadastro</a>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			<!-- </div> -->
+			<div class="who-we-are small-12 medium-7 large-7 columns">
+				<p class="title">Quem Somos?</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint laboriosam blanditiis iusto rem, eligendi necessitatibus dolores, officiis illum quam atque qui officia commodi sed, accusantium. Obcaecati consequatur, itaque repellat omnis!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint laboriosam blanditiis iusto rem, eligendi necessitatibus dolores, officiis illum quam atque qui officia commodi sed, accusantium. Obcaecati consequatur, itaque repellat omnis!
+				</p>
+			</div>
+			<div class="small-12 medium-12 large-12 columns">
+				<p class="all-rights">Todos os direitos reservados a Hand4Hand</p>
+			</div>
 		</div>
 	</section>
 

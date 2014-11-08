@@ -1,0 +1,71 @@
+.all-rights{text-align:center;font-size:15px;}
+
+.social-media{
+	list-style:none;
+	margin:0;
+	padding:0;
+	li{
+		width:96px;
+		height:92px;
+		display:inline-block;
+		margin-right:4px;
+		> div{
+			height:92px;
+			position:relative;
+			padding-top:20px;
+			.title{
+				text-align:center;
+				display: block;
+				text-align: center;
+			}
+			a{
+				display:block;
+				width:100%;
+				height:100%;
+				color:#fff;
+			}
+		}
+		&.facebook{
+			div{
+				background-color:#0d6cb3;
+				&:hover{background-color:darken(#0d6cb3,5%);}
+			}
+		}
+		&.youtube{
+			div{
+				background-color:#fc2227;
+				&:hover{background-color:darken(#fc2227,5%);}
+			}
+		}
+		&.twitter{
+			div{
+				background-color:#2ab6f7;
+				&:hover{background-color:darken(#2ab6f7,5%);}
+			}
+		}
+	}
+	.icon{
+		font-style: normal;
+		text-align: center;
+		display: block;
+		&:before{
+			font-size:32px;
+			margin:0;
+		}
+	}
+}
+
+.footer{
+	.login-form{
+		input{color:$font-color;margin-bottom:8px;}
+	}
+	.secondary-actions{color:#fff;}
+}
+
+.who-we-are{
+	.title{font-weight:bold;}
+	p{
+		font-size: 14px;
+		line-height: 17px;
+	}
+}

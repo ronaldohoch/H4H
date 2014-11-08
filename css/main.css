@@ -2046,7 +2046,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
 }
-.font-awesome:before, .main-event .infos:before, .follow-event:before {
+.font-awesome:before, .main-event .infos:before, .follow-event:before, .event-list .event-wrapper .infos:before, .see-more:before {
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -2123,6 +2123,9 @@ a, a:hover, a:active {
 
 .footer {
   background-color: #424242;
+  min-height: 300px;
+  margin-top: 10px;
+  color: #fff;
 }
 
 @-webkit-keyframes translateO {
@@ -2164,6 +2167,11 @@ a, a:hover, a:active {
 fieldset {
   border: 0;
   padding: 0;
+  margin: 0;
+}
+
+input, textarea, select {
+  outline-style: none;
 }
 
 .header input {
@@ -2388,6 +2396,82 @@ fieldset {
   line-height: 30px;
 }
 
+.all-rights {
+  text-align: center;
+  font-size: 15px;
+}
+
+.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-media li {
+  width: 96px;
+  height: 92px;
+  display: inline-block;
+  margin-right: 4px;
+}
+.social-media li > div {
+  height: 92px;
+  position: relative;
+  padding-top: 20px;
+}
+.social-media li > div .title {
+  text-align: center;
+  display: block;
+  text-align: center;
+}
+.social-media li > div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.social-media li.facebook div {
+  background-color: #0d6cb3;
+}
+.social-media li.facebook div:hover {
+  background-color: #0b5e9b;
+}
+.social-media li.youtube div {
+  background-color: #fc2227;
+}
+.social-media li.youtube div:hover {
+  background-color: #fc090e;
+}
+.social-media li.twitter div {
+  background-color: #2ab6f7;
+}
+.social-media li.twitter div:hover {
+  background-color: #11aef6;
+}
+.social-media .icon {
+  font-style: normal;
+  text-align: center;
+  display: block;
+}
+.social-media .icon:before {
+  font-size: 32px;
+  margin: 0;
+}
+
+.footer .login-form input {
+  color: #58585a;
+  margin-bottom: 8px;
+}
+.footer .secondary-actions {
+  color: #fff;
+}
+
+.who-we-are .title {
+  font-weight: bold;
+}
+.who-we-are p {
+  font-size: 14px;
+  line-height: 17px;
+}
+
 .advertisement {
   margin-bottom: 30px;
 }
@@ -2395,62 +2479,83 @@ fieldset {
 .event-list {
   list-style: none;
   padding: 0px;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
-.event-list li {
-  width: 305px;
+.event-list .event-wrapper {
   height: 192px;
   position: relative;
-  float: left;
   background: #f8f8f8;
-  margin: 7px;
 }
-.event-list li:before {
+.event-list .event-wrapper:before {
   content: "";
   position: absolute;
   top: 10px;
   left: 10px;
 }
-.event-list li.red:before {
+.event-list .event-wrapper.red:before {
   background-image: url("../img/sprite.png");
   background-position-x: -108px;
   background-position-y: -1px;
   width: 56px;
   height: 56px;
 }
-.event-list li.red .follow-event {
+.event-list .event-wrapper.red .follow-event {
   background-color: #f83636;
 }
-.event-list li.blue:before {
+.event-list .event-wrapper.red .follow-event:hover {
+  background-color: #f71d1d;
+}
+.event-list .event-wrapper.blue:before {
   background-image: url("../img/sprite.png");
   background-position-x: -165px;
   background-position-y: -1px;
   width: 56px;
   height: 56px;
 }
-.event-list li.blue .follow-event {
+.event-list .event-wrapper.blue .follow-event {
   background-color: #267fba;
 }
-.event-list li.gray:before {
+.event-list .event-wrapper.blue .follow-event:hover {
+  background-color: #2271a5;
+}
+.event-list .event-wrapper.gray:before {
   background-image: url("../img/sprite.png");
   background-position-x: -51px;
   background-position-y: -1px;
   width: 56px;
   height: 56px;
 }
-.event-list li.gray .follow-event {
+.event-list .event-wrapper.gray .follow-event {
   background-color: #f2f2f2;
   color: #424242;
 }
-.event-list li .infos {
+.event-list .event-wrapper.advertisement {
+  margin-bottom: 0;
+}
+.event-list .event-wrapper .infos {
   width: 100%;
   display: block;
   font-size: 13px;
+  position: absolute;
 }
-.event-list li .data {
-  text-align: center;
+.event-list .event-wrapper .infos:before {
+  font-size: 16px;
 }
-.event-list li .follow-event {
+.event-list .event-wrapper .data {
+  top: 40px;
+  width: 76%;
+  right: 0;
+  text-align: left;
+}
+.event-list .event-wrapper .local {
+  bottom: 90px;
+  left: 35px;
+}
+.event-list .event-wrapper .buyin {
+  bottom: 70px;
+  left: 35px;
+}
+.event-list .event-wrapper .follow-event {
   position: absolute;
   height: 48px;
   width: 100%;
@@ -2461,10 +2566,44 @@ fieldset {
   font-size: 18px;
   line-height: 48px;
 }
-.event-list li .follow-event:before {
+.event-list .event-wrapper .follow-event:before {
   left: 80px;
   top: 15px;
 }
-.event-list li .follow-event.warn:before {
+.event-list .event-wrapper .follow-event.warn {
+  background-color: #f2f2f2;
+  color: #424242;
+}
+.event-list .event-wrapper .follow-event.warn:before {
   left: 100px;
+}
+.event-list .event-wrapper .follow-event.warn:hover {
+  background-color: #e5e5e5;
+}
+.event-list .event-wrapper .title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  text-align: left;
+  width: 76%;
+}
+
+.see-more {
+  width: 121px;
+  height: 33px;
+  text-align: center;
+  line-height: 33px;
+  margin: 0 auto;
+  display: block;
+  background: #f2f2f2;
+  color: #000;
+  position: relative;
+}
+.see-more:before {
+  position: absolute;
+  left: 15px;
+  top: 7px;
+  font-size: 13px;
 }
