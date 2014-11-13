@@ -1,0 +1,10 @@
+.game {
+  background: url(../img/background-jogo.jpg) no-repeat center center;
+  width: 647px;
+  height: 184px;
+  margin: 0 auto;
+}
+
+.players {
+  list-style: none;
+}

@@ -1,0 +1,102 @@
+.game{
+	max-width:647px;
+	height:184px;
+	margin:0 auto;
+	padding-top:30px;
+}
+
+.players{
+	list-style:none;
+	text-align:center;
+	margin: 0;
+	padding: 0;
+	li{
+		position:relative;
+		width:80px;
+		display: inline-block;
+		margin:0 10px;
+	}
+	img{
+		width:80px;
+		height:80px;
+		background:#fba;
+		border-radius:100%;
+		@include bx(0px, 0px, 0px, 3px, rgb(255,255,255));
+	}
+	.name{
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		background: #323232;
+		border-radius: 5px;
+		height: 20px;
+		color: #fff;
+	}
+}
+.timeline{
+	list-style:none;
+	margin:17px auto 0 auto;
+	padding:0;
+	max-width:647px;
+	text-align: center;
+	li{
+		display: inline-block;
+	}
+}
+.cards{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-right:30px;
+	li{
+		position:relative;
+		display: inline-block;
+		float:left;
+		margin:0;
+		height:50px;
+		width:32px;
+		color:#fff;
+		font-size:20px;
+		&.red{background-color:$red-card;}
+		&.black{background-color:$black-card;}
+		> span{
+			font-family: "serif";
+			position: relative;
+			left: 6px;
+			display: block;
+			height: 20px;
+			width: 18px;
+		}
+		&:last-child{
+			width:48px;
+		}
+		&:first-child{
+			width:32px;
+		}
+	}
+}
+.moves{
+	font-size: 15px;
+	> span{
+		width: 100%;
+		display: block;
+		position: relative;
+		color:#323232;
+		text-align:left;
+	}
+}
+.header-wrapper{
+	background: #3c9b03;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #3c9b03 0%, #245b01 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c9b03), color-stop(100%,#245b01));
+	background: -webkit-linear-gradient(top, #3c9b03 0%,#245b01 100%);
+	background: -o-linear-gradient(top, #3c9b03 0%,#245b01 100%);
+	background: -ms-linear-gradient(top, #3c9b03 0%,#245b01 100%);
+	background: linear-gradient(to bottom, #3c9b03 0%,#245b01 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9b03', endColorstr='#245b01',GradientType=0 );
+	height: 184px;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*.box {
  *	@include transition(all, 0.2s, $timingFunction,0);
  *}
@@ -2099,17 +2100,17 @@ a, a:hover, a:active {
 }
 
 .header, .footer {
-  float: left;
   padding: 32px 0;
   width: 100%;
 }
 
-.header, .footer {
+section {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+  float: left;
 }
 
 .header {
@@ -2118,7 +2119,6 @@ a, a:hover, a:active {
   -webkit-box-shadow: inset 0px -2px 1px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0px -2px 1px 0px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px -2px 1px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
 }
 
 .footer {
@@ -2473,7 +2473,7 @@ input, textarea, select {
 }
 
 .advertisement {
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .event-list {
@@ -2606,4 +2606,117 @@ input, textarea, select {
   left: 15px;
   top: 7px;
   font-size: 13px;
+}
+
+.game {
+  max-width: 647px;
+  height: 184px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.players {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.players li {
+  position: relative;
+  width: 80px;
+  display: inline-block;
+  margin: 0 10px;
+}
+.players img {
+  width: 80px;
+  height: 80px;
+  background: #fba;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 0px 3px white;
+  -moz-box-shadow: 0px 0px 0px 3px white;
+  box-shadow: 0px 0px 0px 3px white;
+}
+.players .name {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background: #323232;
+  border-radius: 5px;
+  height: 20px;
+  color: #fff;
+}
+
+.timeline {
+  list-style: none;
+  margin: 17px auto 0 auto;
+  padding: 0;
+  max-width: 647px;
+  text-align: center;
+}
+.timeline li {
+  display: inline-block;
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 30px;
+}
+.cards li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  height: 50px;
+  width: 32px;
+  color: #fff;
+  font-size: 20px;
+}
+.cards li.red {
+  background-color: #ff3535;
+}
+.cards li.black {
+  background-color: #323232;
+}
+.cards li > span {
+  font-family: "serif";
+  position: relative;
+  left: 6px;
+  display: block;
+  height: 20px;
+  width: 18px;
+}
+.cards li:last-child {
+  width: 48px;
+}
+.cards li:first-child {
+  width: 32px;
+}
+
+.moves {
+  font-size: 15px;
+}
+.moves > span {
+  width: 100%;
+  display: block;
+  position: relative;
+  color: #323232;
+  text-align: left;
+}
+
+.header-wrapper {
+  background: #3c9b03;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #3c9b03 0%, #245b01 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c9b03), color-stop(100%, #245b01));
+  background: -webkit-linear-gradient(top, #3c9b03 0%, #245b01 100%);
+  background: -o-linear-gradient(top, #3c9b03 0%, #245b01 100%);
+  background: -ms-linear-gradient(top, #3c9b03 0%, #245b01 100%);
+  background: linear-gradient(to bottom, #3c9b03 0%, #245b01 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c9b03', endColorstr='#245b01',GradientType=0 );
+  height: 184px;
 }
