@@ -2661,16 +2661,27 @@ input, textarea, select {
   width: 100%;
 }
 
+.right-side {
+  width: 60%;
+  float: right;
+  position: relative;
+}
+
 .cards {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-right: 30px;
+  position: absolute;
+  float: right;
+  left: -180px;
+  width: 160px;
+  height: 100%;
 }
 .cards li {
   position: relative;
   display: inline-block;
-  float: left;
+  float: right;
   margin: 0;
   height: 50px;
   width: 32px;
@@ -2692,10 +2703,10 @@ input, textarea, select {
   width: 18px;
 }
 .cards li:last-child {
-  width: 48px;
+  width: 32px;
 }
 .cards li:first-child {
-  width: 32px;
+  width: 48px;
 }
 
 .moves {

@@ -47,15 +47,27 @@
 		width:100%;
 	}
 }
+
+.right-side {
+	width: 60%;
+	float: right;
+	position: relative;
+}
+
 .cards{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-right:30px;
+	margin-right: 30px;
+	position: absolute;
+	float: right;
+	left: -180px;
+	width: 160px;
+	height: 100%;
 	li{
 		position:relative;
 		display: inline-block;
-		float:left;
+		float:right;
 		margin:0;
 		height:50px;
 		width:32px;
@@ -72,10 +84,10 @@
 			width: 18px;
 		}
 		&:last-child{
-			width:48px;
+			width:32px;
 		}
 		&:first-child{
-			width:32px;
+			width:48px;
 		}
 	}
 }
