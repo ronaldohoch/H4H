@@ -2659,6 +2659,10 @@ input, textarea, select {
 .timeline li {
   display: inline-block;
   width: 100%;
+  float: left;
+}
+.timeline li:first-child .cards {
+  margin-top: 5px;
 }
 
 .right-side {
@@ -2671,12 +2675,21 @@ input, textarea, select {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: 30px;
+  padding-right: 15px;
   position: absolute;
   float: right;
-  left: -180px;
+  left: -175px;
   width: 160px;
   height: 100%;
+  border-right: 2px solid #cecece;
+}
+.cards:before {
+  content: "";
+  position: absolute;
+  background: url(../img/sprite.png) no-repeat -25px 0;
+  width: 12px;
+  height: 13px;
+  right: -7px;
 }
 .cards li {
   position: relative;
@@ -2711,13 +2724,61 @@ input, textarea, select {
 
 .moves {
   font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
-.moves > span {
+.moves li {
   width: 100%;
   display: block;
   position: relative;
   color: #323232;
   text-align: left;
+}
+.moves li > span {
+  position: relative;
+  display: inline;
+}
+
+.pot {
+  padding: 1px 3px;
+  background: #d8dbd6;
+}
+
+.stars {
+  position: relative;
+  padding: 2px 5px;
+  background: #d8dbd6;
+  right: -10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.stars:before {
+  position: absolute;
+  left: -9px;
+  top: 0px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 9px 9px 0;
+  border-color: transparent #d8dbd6 transparent transparent;
+  line-height: 0px;
+  _border-color: #000000 #d8dbd6 #000000 #000000;
+  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+.stars > span {
+  width: 15px;
+  display: inline-block;
+  color: #fff;
+}
+.stars > span:before {
+  font-size: 16px;
+}
+.stars > span.selected {
+  color: #ffa800;
+}
+.stars > span:last-child {
+  margin-right: 4px;
 }
 
 .header-wrapper {

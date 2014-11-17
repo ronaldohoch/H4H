@@ -45,6 +45,8 @@
 	li{
 		display: inline-block;
 		width:100%;
+		float:left;
+		&:first-child .cards{margin-top:5px;}
 	}
 }
 
@@ -58,12 +60,21 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-right: 30px;
+	padding-right: 15px;
 	position: absolute;
 	float: right;
-	left: -180px;
+	left: -175px;
 	width: 160px;
 	height: 100%;
+	border-right:2px solid #cecece;
+	&:before{
+		content: "";
+		position: absolute;
+		background: url(../img/sprite.png) no-repeat -25px 0;
+		width: 12px;
+		height: 13px;
+		right: -7px;
+	}
 	li{
 		position:relative;
 		display: inline-block;
@@ -93,14 +104,64 @@
 }
 .moves{
 	font-size: 15px;
-	> span{
+	padding:0;
+	margin:0;
+	li{
 		width: 100%;
 		display: block;
 		position: relative;
 		color:#323232;
 		text-align:left;
+		> span{
+			position:relative;
+			display: inline;
+		}
 	}
 }
+.pot{
+	padding:1px 3px;
+	background:#d8dbd6;
+}
+
+.stars{
+	position: relative;
+	padding: 2px 5px;
+	background: #d8dbd6;
+	right: -10px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	&:before{
+		position: absolute;
+		left: -9px;
+		top: 0px;
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 9px 9px 0;
+		border-color: transparent #d8dbd6 transparent transparent;
+		line-height: 0px;
+		_border-color: #000000 #d8dbd6 #000000 #000000;
+		_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	}
+
+	> span{
+		width:15px;
+		display: inline-block;
+		color:#fff;
+		&:before{
+			font-size:16px;
+		}
+		&.selected{
+			color:#ffa800;
+		}
+		&:last-child{
+			margin-right:4px;
+		}
+	}
+}
+
 .header-wrapper{
 	background: #3c9b03;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
