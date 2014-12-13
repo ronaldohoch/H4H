@@ -1,20 +1,38 @@
 .game{
-	max-width:647px;
-	height:184px;
-	margin:0 auto;
-	padding-top:30px;
+	width: 495px;
+	height: 235px;
+	border: 0px solid black;
+	background: url(../img/mesapoker.png) no-repeat center center;
+	margin: 0 auto;
 }
 
 .players{
-	list-style:none;
-	text-align:center;
+	list-style: none;
+	text-align: center;
 	margin: 0;
 	padding: 0;
-	li{
-		position:relative;
-		width:80px;
-		display: inline-block;
-		margin:0 10px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	a{
+		width: 80px;
+		display: block;
+		margin: 0 10px;
+		position: absolute;
+		@include Opacity(1);
+		&.inactive{
+			@include Opacity(0.5);
+			.l-c{display: none;}
+		}
+		&.p1{right: 380px;top: -10px;.l-c{right: -20px;top: 70px;}}
+		&.p2{right: 450px;top: 80px;.l-c{right: -30px;top: 20px;}}
+		&.p3{right: 380px;top: 165px;.l-c{right: -10px;top: -20px;}}
+		&.p4{right: 285px;top: 185px;.l-c{right: 25px;top: -30px;}}
+		&.p5{right: 190px;top: 185px;.l-c{right: 25px;top: -30px;}}
+		&.p6{right: 95px;top: 185px;.l-c{right: 25px;top: -30px;}}
+		&.p7{right: 0px;top: 165px;.l-c{right: 65px;top: -25px;}}
+		&.p8{right: -70px;top: 80px;.l-c{right: 90px;top: 20px;}}
+		&.p9{right: -10px;top: -10px;.l-c{right: 85px;top: 70px;}}
 	}
 	img{
 		width:80px;
@@ -35,27 +53,30 @@
 		height: 20px;
 		color: #fff;
 	}
+	.l-c{
+		position:absolute;
+		&.double{background: url('../img/cards.png') no-repeat -114px -250px;width: 15px;height: 24px;}
+		&.triple{background: url('../img/cards.png') no-repeat -131px -250px;width: 17px;height: 27px;}
+	}
 }
 .timeline{
 	list-style:none;
-	margin:17px auto 0 auto;
+	margin:0px auto;
 	padding:0;
 	max-width:647px;
 	text-align: center;
-	li{
+	> li{
 		display: inline-block;
 		width:100%;
 		float:left;
 		&:first-child .cards{margin-top:5px;}
 	}
 }
-
 .right-side {
 	width: 60%;
 	float: right;
 	position: relative;
 }
-
 .cards{
 	margin: 0;
 	padding: 0;
@@ -80,26 +101,10 @@
 		display: inline-block;
 		float:right;
 		margin:0;
-		height:50px;
-		width:32px;
+		margin-right:5px;
 		color:#fff;
 		font-size:20px;
-		&.red{background-color:$red-card;}
-		&.black{background-color:$black-card;}
-		> span{
-			font-family: "serif";
-			position: relative;
-			left: 6px;
-			display: block;
-			height: 20px;
-			width: 18px;
-		}
-		&:last-child{
-			width:32px;
-		}
-		&:first-child{
-			width:48px;
-		}
+		&:first-child{margin-right:0px;}
 	}
 }
 .moves{
@@ -122,7 +127,6 @@
 	padding:1px 3px;
 	background:#d8dbd6;
 }
-
 .stars{
 	position: relative;
 	padding: 2px 5px;
@@ -161,16 +165,19 @@
 		}
 	}
 }
-
 .header-wrapper{
-	background: #3c9b03;
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top, #3c9b03 0%, #245b01 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c9b03), color-stop(100%,#245b01));
-	background: -webkit-linear-gradient(top, #3c9b03 0%,#245b01 100%);
-	background: -o-linear-gradient(top, #3c9b03 0%,#245b01 100%);
-	background: -ms-linear-gradient(top, #3c9b03 0%,#245b01 100%);
-	background: linear-gradient(to bottom, #3c9b03 0%,#245b01 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9b03', endColorstr='#245b01',GradientType=0 );
-	height: 184px;
+	// background: #3c9b03;
+	// background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	// background: -moz-linear-gradient(top, #3c9b03 0%, #245b01 100%);
+	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3c9b03), color-stop(100%,#245b01));
+	// background: -webkit-linear-gradient(top, #3c9b03 0%,#245b01 100%);
+	// background: -o-linear-gradient(top, #3c9b03 0%,#245b01 100%);
+	// background: -ms-linear-gradient(top, #3c9b03 0%,#245b01 100%);
+	// background: linear-gradient(to bottom, #3c9b03 0%,#245b01 100%);
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9b03', endColorstr='#245b01',GradientType=0 );
+	height: 320px;
+	border-bottom: 2px solid #cecece;
+	padding-top: 20px;
 }
+
+//default photoshop guide colors 4bffff

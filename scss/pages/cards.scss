@@ -1,0 +1,74 @@
+//spades (♠), hearts (♥), diamonds (♦), clubs (♣).
+
+.clubs{
+	width: 37px;
+	height: 58px;
+	&.cA{background:url('../img/cards.png') no-repeat 0 0;}
+	&.c2{background: url('../img/cards.png') no-repeat -38px 0;}
+	&.c3{background: url('../img/cards.png') no-repeat -76px 0;}
+	&.c4{background: url('../img/cards.png') no-repeat -114px 0;}
+	&.c5{background: url('../img/cards.png') no-repeat -152px 0;}
+	&.c6{background: url('../img/cards.png') no-repeat -190px 0;}
+	&.c7{background: url('../img/cards.png') no-repeat -228px 0;}
+	&.c8{background: url('../img/cards.png') no-repeat -266px 0;}
+	&.c9{background: url('../img/cards.png') no-repeat -304px 0;}
+	&.c10{background: url('../img/cards.png') no-repeat -342px 0;}
+	&.cj{background: url('../img/cards.png') no-repeat -380px 0;}
+	&.cQ{background: url('../img/cards.png') no-repeat -418px 0;}
+	&.cK{background: url('../img/cards.png') no-repeat -456px 0;}
+}
+.diamonds{
+	width: 37px;
+	height: 58px;
+	&.cA{background: url('../img/cards.png') no-repeat 0 -62px;}
+	&.c2{background: url('../img/cards.png') no-repeat -38px -62px;}
+	&.c3{background: url('../img/cards.png') no-repeat -76px -62px;}
+	&.c4{background: url('../img/cards.png') no-repeat -114px -62px;}
+	&.c5{background: url('../img/cards.png') no-repeat -152px -62px;}
+	&.c6{background: url('../img/cards.png') no-repeat -190px -62px;}
+	&.c7{background: url('../img/cards.png') no-repeat -228px -62px;}
+	&.c8{background: url('../img/cards.png') no-repeat -266px -62px;}
+	&.c9{background: url('../img/cards.png') no-repeat -304px -62px;}
+	&.c10{background: url('../img/cards.png') no-repeat -342px -62px;}
+	&.cj{background: url('../img/cards.png') no-repeat -380px -62px;}
+	&.cQ{background: url('../img/cards.png') no-repeat -418px -62px;}
+	&.cK{background: url('../img/cards.png') no-repeat -456px -62px;}
+}
+.hearts{
+	width: 37px;
+	height: 58px;
+	&.cA{background: url('../img/cards.png') no-repeat 0 -125px;}
+	&.c2{background: url('../img/cards.png') no-repeat -38px -125px;}
+	&.c3{background: url('../img/cards.png') no-repeat -76px -125px;}
+	&.c4{background: url('../img/cards.png') no-repeat -114px -125px;}
+	&.c5{background: url('../img/cards.png') no-repeat -152px -125px;}
+	&.c6{background: url('../img/cards.png') no-repeat -190px -125px;}
+	&.c7{background: url('../img/cards.png') no-repeat -228px -125px;}
+	&.c8{background: url('../img/cards.png') no-repeat -266px -125px;}
+	&.c9{background: url('../img/cards.png') no-repeat -304px -125px;}
+	&.c10{background: url('../img/cards.png') no-repeat -342px -125px;}
+	&.cj{background: url('../img/cards.png') no-repeat -380px -125px;}
+	&.cQ{background: url('../img/cards.png') no-repeat -418px -125px;}
+	&.cK{background: url('../img/cards.png') no-repeat -456px -125px;}
+}
+.spades{
+	width: 37px;
+	height: 58px;
+	&.cA{background: url('../img/cards.png') no-repeat 0 -187px;}
+	&.c2{background: url('../img/cards.png') no-repeat -38px -187px;}
+	&.c3{background: url('../img/cards.png') no-repeat -76px -187px;}
+	&.c4{background: url('../img/cards.png') no-repeat -114px -187px;}
+	&.c5{background: url('../img/cards.png') no-repeat -152px -187px;}
+	&.c6{background: url('../img/cards.png') no-repeat -190px -187px;}
+	&.c7{background: url('../img/cards.png') no-repeat -228px -187px;}
+	&.c8{background: url('../img/cards.png') no-repeat -266px -187px;}
+	&.c9{background: url('../img/cards.png') no-repeat -304px -187px;}
+	&.c10{background: url('../img/cards.png') no-repeat -342px -187px;}
+	&.cj{background: url('../img/cards.png') no-repeat -380px -187px;}
+	&.cQ{background: url('../img/cards.png') no-repeat -418px -187px;}
+	&.cK{background: url('../img/cards.png') no-repeat -456px -187px;}
+}
+.blank{
+	.cB{background: url('../img/cards.png') no-repeat 0 -249px;}
+	.cBack{background: url('../img/cards.png') no-repeat -76px -249px;}
+}
